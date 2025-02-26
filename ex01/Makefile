@@ -6,7 +6,7 @@
 #    By: tnakas <tnakas@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/18 18:20:05 by tnakas            #+#    #+#              #
-#    Updated: 2025/02/25 19:50:05 by tnakas           ###   ########.fr        #
+#    Updated: 2025/02/26 02:14:33 by tnakas           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME        = obj/ex01
 SRC_DIR     = .
 OBJ_DIR     = obj
 
-SRC         = $(SRC_DIR)/main.cpp
+SRC         = $(SRC_DIR)/main.cpp \
 				$(SRC_DIR)/Span.cpp
 HEADER		= $(SRC_DIR)/Span.hpp
 OBJ         = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
