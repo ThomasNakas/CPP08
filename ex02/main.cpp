@@ -6,7 +6,7 @@
 /*   By: tnakas <tnakas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 12:05:19 by tnakas            #+#    #+#             */
-/*   Updated: 2025/03/02 16:21:12 by tnakas           ###   ########.fr       */
+/*   Updated: 2025/03/02 16:27:04 by tnakas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,6 @@ int main()
 		++it;
 	}
 	std::cout << "\n";
-	//testing the reverse order of the stack
-	std::cout << "----------testing reverse order------------\n";
 	//testing the copy constractor
 	std::stack<int> s(mstack);
 	std::cout << "Top of copied std::stack: " << s.top() << "\n";
