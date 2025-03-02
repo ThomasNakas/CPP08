@@ -6,7 +6,7 @@
 /*   By: tnakas <tnakas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 19:52:06 by tnakas            #+#    #+#             */
-/*   Updated: 2025/02/26 00:56:25 by tnakas           ###   ########.fr       */
+/*   Updated: 2025/03/02 16:56:29 by tnakas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 #include <vector>
 #include <exception>
 
+//notfoundexception class  inhereted from the exception class
+//I'm setting it in oreder to call it with a customizable message
 class NotFoundException : public std::exception
 {
 	public:

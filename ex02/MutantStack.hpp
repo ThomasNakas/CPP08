@@ -6,7 +6,7 @@
 /*   By: tnakas <tnakas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 19:51:04 by tnakas            #+#    #+#             */
-/*   Updated: 2025/03/02 14:57:07 by tnakas           ###   ########.fr       */
+/*   Updated: 2025/03/02 16:54:13 by tnakas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ class MuntantStack : public  std::stack<T>
 		typedef typename std::stack<T>::container_type::const_reverse_iterator const_reverse_iterator;
 
 		MuntantStack() : std::stack<T>() {}
+		//the atributes constructor is missing because I don't have atributes
 		MuntantStack(const MuntantStack& other) : std::stack<T>(other) {}
 		MuntantStack& operator=(const MuntantStack& other)
 		{
