@@ -6,12 +6,13 @@
 /*   By: tnakas <tnakas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 19:51:38 by tnakas            #+#    #+#             */
-/*   Updated: 2025/03/02 16:57:26 by tnakas           ###   ########.fr       */
+/*   Updated: 2025/03/02 17:07:36 by tnakas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Span.hpp"
 
+//adding atleast one element by default
 Span::Span(): _N(1){}
 Span::Span(unsigned int N) : _N(N){}
 Span::Span(const Span& other) : _N(other._N), _numbers(other._numbers){}
