@@ -6,7 +6,7 @@
 /*   By: tnakas <tnakas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 12:05:19 by tnakas            #+#    #+#             */
-/*   Updated: 2025/03/02 16:27:04 by tnakas           ###   ########.fr       */
+/*   Updated: 2025/03/02 17:40:47 by tnakas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,12 @@ int main()
 	MuntantStack<int> mstack;
 	mstack.push(5);
 	mstack.push(17);
-	std::cout << "(last) top element: " << mstack.top() << "\n";
+	std::cout << "(last) top element before pop: " << mstack.top() << "\n";
+	std::cout << "Size before pop: " << mstack.size() << "\n";
+	std::cout << "//~~~.pop is called~~~//\n";
 	mstack.pop();
+	std::cout << "(last) top element after pop: " << mstack.top() << "\n";
 	std::cout << "Size after pop: " << mstack.size() << "\n";
-	
 	mstack.push(3);
 	mstack.push(5);
 	mstack.push(737);
@@ -59,7 +61,7 @@ int main()
 	for (std::list<int>::iterator lit = lstack.begin(); lit !=lstack.end(); ++lit)
 	std::cout << *lit << " ";
 	std::cout << "\n";
-	std::cout << "//==========EXTRA TESTING=================\n";
+	std::cout << "//==========EXTRA TESTING==================\n";
 	std::cout << "Stack elements (reverse): \n";
 	MuntantStack<int>::reverse_iterator rit = mstack.rbegin();
 	//testing the const
@@ -79,9 +81,10 @@ int main()
 		++it;
 	}
 	std::cout << "\n";
-	std::cout << "-----------testing top and pop------------\n";
+	std::cout << "-----------testing top and pop-------------\n";
 	std::cout << "Size before pop: " << mstack.size() << "\n";
 	std::cout << "(last in, first out) top element: " << mstack.top() << "\n";
+	std::cout << "//~~~.pop is called~~~//\n";
 	mstack.pop();
 	std::cout << "Size after pop:  " << mstack.size() << "\n";
 	std::cout << "(last in, first out) new top element after pop: " << mstack.top() << "\n";
