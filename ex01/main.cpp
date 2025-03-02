@@ -6,7 +6,7 @@
 /*   By: tnakas <tnakas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 12:05:19 by tnakas            #+#    #+#             */
-/*   Updated: 2025/03/02 17:26:28 by tnakas           ###   ########.fr       */
+/*   Updated: 2025/03/02 17:31:44 by tnakas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int main()
 		sp.printNumbers();
 		std::cout << " Shortess span: " << sp.shortestSpan() << "\n";
 		std::cout << " Longest span: " << sp.longestSpan() << "\n";
-		//overflowing the span
+		//overflowing the span icluding it in a try catch in order my code to be excecuted if I catch an error
 		try
 		{
 			sp.addNumber(42);
