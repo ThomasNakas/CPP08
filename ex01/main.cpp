@@ -6,7 +6,7 @@
 /*   By: tnakas <tnakas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 12:05:19 by tnakas            #+#    #+#             */
-/*   Updated: 2025/02/26 02:22:20 by tnakas           ###   ########.fr       */
+/*   Updated: 2025/03/02 15:40:51 by tnakas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,9 @@ int main()
 			std::cerr << "Exception: "<< e.what() << "\n";
 		}
 		//Large Set
-		Span largeSpan(10000);
+		Span largeSpan(10010);
 		std::vector<int> largeSet;
-		for (int i = 0; i < 10000; i++)
+		for (int i = 0; i < 10010; i++)
 			largeSet.push_back (i * 10);
 		largeSpan.addRange(largeSet.begin(), largeSet.end());	
 		std::cout << "Shortest Span: " << largeSpan.shortestSpan() << "\n";
