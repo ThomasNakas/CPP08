@@ -6,7 +6,7 @@
 /*   By: tnakas <tnakas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 12:05:19 by tnakas            #+#    #+#             */
-/*   Updated: 2025/03/02 15:18:31 by tnakas           ###   ########.fr       */
+/*   Updated: 2025/03/02 15:36:15 by tnakas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,10 @@ int main()
 	//testing the order of the stack
 	std::cout << "Stack elements: \n";
 	MuntantStack<int>::iterator it = mstack.begin();
-	MuntantStack<int>::iterator ite = mstack.end();
-	while (it != ite)
+	//testing the const
+	MuntantStack<int>::const_iterator cite = mstack.end();
+	// ite = 5;
+	while (it != cite)
 	{
 		std::cout << *it << " ";
 		++it;
@@ -40,8 +42,10 @@ int main()
 	//testing the reverse order of the stack
 	std::cout << "Stack elements (reverse): \n";
 	MuntantStack<int>::reverse_iterator rit = mstack.rbegin();
-	MuntantStack<int>::reverse_iterator rite = mstack.rend();
-	while (rit != rite)
+	//testing the const
+	MuntantStack<int>::const_reverse_iterator crite = mstack.rend();
+	// rite = 5;
+	while (rit != crite)
 	{
 		std::cout << *rit << " ";
 		++rit;
