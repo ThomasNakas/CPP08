@@ -6,7 +6,7 @@
 /*   By: tnakas <tnakas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 19:51:04 by tnakas            #+#    #+#             */
-/*   Updated: 2025/03/02 16:54:13 by tnakas           ###   ########.fr       */
+/*   Updated: 2025/03/02 17:34:21 by tnakas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,7 @@ template <typename T>
 class MuntantStack : public  std::stack<T>
 {
 	public:
-		//aliases
-		typedef typename std::stack<T>::container_type::iterator iterator;
-		typedef typename std::stack<T>::container_type::const_iterator const_iterator;
-		typedef typename std::stack<T>::container_type::reverse_iterator reverse_iterator;
-		typedef typename std::stack<T>::container_type::const_reverse_iterator const_reverse_iterator;
-
+		//Orthodox Canonical Form
 		MuntantStack() : std::stack<T>() {}
 		//the atributes constructor is missing because I don't have atributes
 		MuntantStack(const MuntantStack& other) : std::stack<T>(other) {}
@@ -38,6 +33,12 @@ class MuntantStack : public  std::stack<T>
 			return *this;
 		}
 		~MuntantStack() {}
+		//aliases methods
+		typedef typename std::stack<T>::container_type::iterator iterator;
+		typedef typename std::stack<T>::container_type::const_iterator const_iterator;
+		typedef typename std::stack<T>::container_type::reverse_iterator reverse_iterator;
+		typedef typename std::stack<T>::container_type::const_reverse_iterator const_reverse_iterator;
+
 		
 		//iterator functions
 		
